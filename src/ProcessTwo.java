@@ -1,6 +1,6 @@
-public class NewThreadTwo {
+public class ProcessTwo {
     public static void main(String[] args) {
-        NewThread InstanceNewThread = new NewThread();
+        ProcessOne InstanceNewThread = new ProcessOne();
         System.out.println("The process has been started");
         try {
             InstanceNewThread.run();

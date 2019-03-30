@@ -1,9 +1,9 @@
 import static java.lang.Thread.sleep;
 
 //Here I also looked at how multithreading works.
-class NewThread implements Runnable {
+class ProcessOne implements Runnable {
 
-    NewThread() {
+    ProcessOne() {
         Thread child = new Thread("ParentThread"); //add "this" for the full work of multithreading
         child.start();
     }
@@ -23,7 +23,7 @@ class NewThread implements Runnable {
 
 class Parent {
     public static void main(String args[]) {
-        new NewThread();
+        new ProcessOne();
         try {
             System.out.println("The main thread started");
             sleep(1000);
